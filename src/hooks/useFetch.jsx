@@ -19,7 +19,7 @@ export const useFetch = (url) => {
                 setData(null)
                 throw Error ("We couldn't fetch data")
             }
-            setData(data)
+            setData(data.data.results)
             setLoading(false)
         })
         .catch((err) => {

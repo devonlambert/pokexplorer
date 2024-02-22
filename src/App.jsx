@@ -4,12 +4,7 @@ import { Main } from './template/Main'
 import { Navbar } from './template/Navbar'
 import { Sidebar } from './template/Sidebar'
 
-import { useFetch } from './hooks/useFetch'
-
 export const App = () => {
-  const { data, loading, error } = useFetch('https://pokeapi.co/api/v2/pokemon/')
-
-  console.log(data, loading, error)
 
   return (
     <Flex direction="column" flex="1">
